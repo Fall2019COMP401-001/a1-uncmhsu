@@ -66,7 +66,6 @@ Double twelth = Double.parseDouble(x);
 Double totalstt = ((eleventh * twelth) );
 scan.close();
 
-System.out.println(totalCustomers );
 
 System.out.println(fr + ". " + nextName+":" + " " + totals );
 System.out.println(frT + ". " + k+":" + " " + totalst );
