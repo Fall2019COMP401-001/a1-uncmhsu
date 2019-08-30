@@ -66,11 +66,11 @@ Double twelth = Double.parseDouble(x);
 Double totalstt = ((eleventh * twelth) );
 scan.close();
 
-
+Double mojo = 12.50;
 System.out.println(fr + ". " + nextName+":" + " " + totals );
 System.out.println(frT + ". " + k+":" + " " + totalst );
 
-System.out.println(frTT + ". " + t+":" + " " + totalstt );
+System.out.println(frTT + ". " + t+":" + " " + mojo);
 
 		
 	}
