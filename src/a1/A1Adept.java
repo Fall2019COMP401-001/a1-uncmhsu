@@ -9,7 +9,7 @@ public class A1Adept {
 		
 		Scanner scan = new Scanner(System.in);
 	
-		// Your code follows here.
+		// Your code follows here .
 		int totalItems = scan.nextInt();
 		String[] itemArray = new String[totalItems];
 		Double[] itemCosts = new Double[totalItems];
