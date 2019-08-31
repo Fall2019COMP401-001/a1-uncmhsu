@@ -70,20 +70,11 @@ public class A1Adept {
 				largestVal = customerTotals[(int) Math.round(o)];
 						String finalTotal = String.format("%.2f", largestVal);
 				System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
-			} else {
-				largestVal = customerTotals[(int) Math.round(o)];
-				String finalTotal = String.format("%.2f", largestVal);
-		System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
 			}
 			
 		}
 		for (int p = 0; p < totalCustomers; p++) {
 			if (customersTotals[p] < smallestVal) {
-				smallest = p;
-				smallestVal = customerTotals[p];
-						String finalTotal = String.format("%.2f", smallestVal);
-				System.out.println("Smallest: " + customerArray[p] + " (" + finalTotal + ") ");
-			} else {
 				smallest = p;
 				smallestVal = customerTotals[p];
 						String finalTotal = String.format("%.2f", smallestVal);
