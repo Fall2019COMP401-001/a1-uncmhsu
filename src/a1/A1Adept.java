@@ -65,16 +65,25 @@ public class A1Adept {
 		Double largestVal = customerTotals[0];
 		Double[] customersTotals = customerTotals;
 		int largest = 0;
-		for (Double o = 1.0; o < totalCustomers; o++) {
+		for (Double o = 0.0; o < totalCustomers; o++) {
 			if (customersTotals[(int) Math.round(o)] > largestVal) {
 				largestVal = customerTotals[(int) Math.round(o)];
 						String finalTotal = String.format("%.2f", largestVal);
 				System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
+			} else if (customersTotals[(int) Math.round(o)] == largestVal) {
+				largestVal = customerTotals[(int) Math.round(o)];
+				String finalTotal = String.format("%.2f", largestVal);
+		System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
 			}
 			
 		}
 		for (int p = 0; p < totalCustomers; p++) {
 			if (customersTotals[p] < smallestVal) {
+				smallest = p;
+				smallestVal = customerTotals[p];
+						String finalTotal = String.format("%.2f", smallestVal);
+				System.out.println("Smallest: " + customerArray[p] + " (" + finalTotal + ") ");
+			} else if (customersTotals[p] == smallestVal) {
 				smallest = p;
 				smallestVal = customerTotals[p];
 						String finalTotal = String.format("%.2f", smallestVal);
