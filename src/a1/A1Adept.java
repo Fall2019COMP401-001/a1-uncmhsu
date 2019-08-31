@@ -65,14 +65,26 @@ public class A1Adept {
 		Double largestVal = customerTotals[0];
 		Double[] customersTotals = customerTotals;
 		int largest = 0;
-		for (Double o = 0.0; o < totalCustomers; o++) {
-			if (customersTotals[(int) Math.round(o)] > largestVal) {
-				largestVal = customerTotals[(int) Math.round(o)];
-						String finalTotal = String.format("%.2f", largestVal);
-				System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
+		if (totalCustomers == 1) {
+			largestVal = customerTotals[(int) Math.round(0.0)];
+			String finalTotal = String.format("%.2f", largestVal);
+	System.out.println("Biggest: " + customerArray[(int) Math.round(0.0)] + " (" + finalTotal + ") ");
+		} else {
+			for (Double o = 0.0; o < totalCustomers; o++) {
+				if (customersTotals[(int) Math.round(o)] > largestVal) {
+					largestVal = customerTotals[(int) Math.round(o)];
+							String finalTotal = String.format("%.2f", largestVal);
+					System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
+				} 
+				
 			}
-			
 		}
+		
+	if (totalCustomers == 1) {
+		smallestVal = customerTotals[0];
+		String finalTotal = String.format("%.2f", smallestVal);
+System.out.println("Smallest: " + customerArray[0] + " (" + finalTotal + ") ");
+	} else {
 		for (int p = 0; p < totalCustomers; p++) {
 			if (customersTotals[p] < smallestVal) {
 				smallest = p;
@@ -81,6 +93,7 @@ public class A1Adept {
 				System.out.println("Smallest: " + customerArray[p] + " (" + finalTotal + ") ");
 			}
 		}
+	}
 		Double adding = 0.0;
 
 		for (int m = 0; m < totalCustomers; m++) {
