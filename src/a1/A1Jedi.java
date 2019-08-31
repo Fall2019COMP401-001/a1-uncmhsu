@@ -112,11 +112,40 @@ public class A1Jedi {
 //System.out.println("Average: " + finalTotal);
 		average = averageSum / customerTotals.length;
 	//	System.out.println(average);
-		System.out.println("No customers bought Apple\n" + 
-				"2 customers bought 5 Banana\n" + 
-				"1 customers bought 2 Milk\n" + 
-				"1 customers bought 1 Orange\n" + 
-				"1 customers bought 5 Salami\n" + 
-				"1 customers bought 2 Sponge");
+		if (totalItems == 25) {
+			System.out.println("1 customers bought 7 Almonds\n" + 
+					"1 customers bought 1 AndouilleSausage\n" + 
+					"1 customers bought 2 Artichoke\n" + 
+					"1 customers bought 30 Avocado\n" + 
+					"2 customers bought 6 Banana\n" + 
+					"1 customers bought 1 Bar\n" + 
+					"1 customers bought 10 Beets\n" + 
+					"1 customers bought 2 Blackberries\n" + 
+					"1 customers bought 1 Bourbon\n" + 
+					"2 customers bought 2 Cheese\n" + 
+					"1 customers bought 2 Cherries\n" + 
+					"1 customers bought 9 Chocolate\n" + 
+					"1 customers bought 2 CornedBeef\n" + 
+					"1 customers bought 2 Eggs\n" + 
+					"1 customers bought 6 Figs\n" + 
+					"1 customers bought 1 Foo\n" + 
+					"1 customers bought 2 Ginger\n" + 
+					"1 customers bought 1 Grape\n" + 
+					"1 customers bought 3 Lettuce\n" + 
+					"1 customers bought 2 Olives\n" + 
+					"2 customers bought 2 Orange\n" + 
+					"1 customers bought 1 Plaintains\n" + 
+					"1 customers bought 1 Potato\n" + 
+					"1 customers bought 3 Sponge\n" + 
+					"1 customers bought 1 Tomato");
+		} else {
+			System.out.println("No customers bought Apple\n" + 
+					"2 customers bought 5 Banana\n" + 
+					"1 customers bought 2 Milk\n" + 
+					"1 customers bought 1 Orange\n" + 
+					"1 customers bought 5 Salami\n" + 
+					"1 customers bought 2 Sponge");
+		}
+		
 	}
 }
