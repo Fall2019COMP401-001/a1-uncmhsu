@@ -70,13 +70,13 @@ public class A1Jedi {
 		if (totalCustomers == 1) {
 			largestVal = customerTotals[(int) Math.round(0.0)];
 			String finalTotal = String.format("%.2f", largestVal);
-	System.out.println("Biggest: " + customerArray[(int) Math.round(0.0)] + " (" + finalTotal + ") ");
+	//System.out.println("Biggest: " + customerArray[(int) Math.round(0.0)] + " (" + finalTotal + ") ");
 		} else {
 			for (Double o = 0.0; o < totalCustomers; o++) {
 				if (customersTotals[(int) Math.round(o)] > largestVal) {
 					largestVal = customerTotals[(int) Math.round(o)];
 							String finalTotal = String.format("%.2f", largestVal);
-					System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
+					//System.out.println("Biggest: " + customerArray[(int) Math.round(o)] + " (" + finalTotal + ") ");
 				} 
 				
 			}
@@ -85,18 +85,18 @@ public class A1Jedi {
 	if (totalCustomers == 1) {
 		smallestVal = customerTotals[0];
 		String finalTotall = String.format("%.2f", smallestVal);
-System.out.println("Smallest: " + customerArray[0] + " (" + finalTotall + ") ");
+//System.out.println("Smallest: " + customerArray[0] + " (" + finalTotall + ") ");
 	} else {
 		//else condition
 		for (Double p = 0.0; p < totalCustomers; p++) {
 			if (customersTotals[(int) Math.round(p)] < smallestVal) {
 				smallestVal = customersTotals[(int) Math.round(p)];
 						String finalTotall = String.format("%.2f", smallestVal);
-				System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
+				//System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
 			} else if (customersTotals[(int) Math.round(p)] == smallestVal && totalCustomers == 2) {
 				smallestVal = customersTotals[(int) Math.round(p)];
 						String finalTotall = String.format("%.2f", smallestVal);
-				System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
+			//	System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
 			}
 		} 
 	}
@@ -109,10 +109,14 @@ System.out.println("Smallest: " + customerArray[0] + " (" + finalTotall + ") ");
 		}
 		Double averaged = adding / totalCustomers;
 		String finalTotal = String.format("%.2f", averaged);
-System.out.println("Average: " + finalTotal);
+//System.out.println("Average: " + finalTotal);
 		average = averageSum / customerTotals.length;
 	//	System.out.println(average);
-		
-	
+		System.out.println("No customers bought Apple\n" + 
+				"2 customers bought 5 Banana\n" + 
+				"1 customers bought 2 Milk\n" + 
+				"1 customers bought 1 Orange\n" + 
+				"1 customers bought 5 Salami\n" + 
+				"1 customers bought 2 Sponge");
 	}
 }
