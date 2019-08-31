@@ -13,19 +13,22 @@ public class A1Adept {
 		int totalItems = scan.nextInt();
 		String[] itemArray = new String[totalItems];
 		Double[] itemCosts = new Double[totalItems];
-		String[] customerArray = new String[totalItems];
-		Double[] customerTotals = new Double[totalItems];
+		
 		Double averageSum = 0.0;
 		Double average = 0.0;
 		for (int i = 0; i < totalItems; i++) {
 			
 			String nextItem = scan.next();
 			String nextItemCost = scan.next();
+			
 			Double costNextItem = Double.parseDouble(nextItemCost);
+		
 			itemArray[i] = nextItem;
 			itemCosts[i] = costNextItem;
 		}
 		int totalCustomers = scan.nextInt();
+		String[] customerArray = new String[totalCustomers];
+		Double[] customerTotals = new Double[totalCustomers];
 		for (int i = 0; i < totalCustomers; i++) {
 			Double grandTotal = 0.0;
 
@@ -82,17 +85,20 @@ public class A1Adept {
 		
 	if (totalCustomers == 1) {
 		smallestVal = customerTotals[0];
-		String finalTotal = String.format("%.2f", smallestVal);
-System.out.println("Smallest: " + customerArray[0] + " (" + finalTotal + ") ");
+		String finalTotall = String.format("%.2f", smallestVal);
+System.out.println("Smallest: " + customerArray[0] + " (" + finalTotall + ") ");
 	} else {
-		for (int p = 0; p < totalCustomers; p++) {
-			if (customersTotals[p] < smallestVal) {
-				smallest = p;
-				smallestVal = customerTotals[p];
-						String finalTotal = String.format("%.2f", smallestVal);
-				System.out.println("Smallest: " + customerArray[p] + " (" + finalTotal + ") ");
+		for (Double p = 0.0; p < totalCustomers; p++) {
+			if (customersTotals[(int) Math.round(p)] < smallestVal) {
+				smallestVal = customersTotals[(int) Math.round(p)];
+						String finalTotall = String.format("%.2f", smallestVal);
+				System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
+			} else if (customersTotals[(int) Math.round(p)] == smallestVal) {
+				smallestVal = customersTotals[(int) Math.round(p)];
+						String finalTotall = String.format("%.2f", smallestVal);
+				System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
 			}
-		}
+		} 
 	}
 		Double adding = 0.0;
 
