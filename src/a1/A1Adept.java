@@ -93,7 +93,7 @@ System.out.println("Smallest: " + customerArray[0] + " (" + finalTotall + ") ");
 				smallestVal = customersTotals[(int) Math.round(p)];
 						String finalTotall = String.format("%.2f", smallestVal);
 				System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
-			} else if (customersTotals[(int) Math.round(p)] == smallestVal) {
+			} else if (customersTotals[(int) Math.round(p)] == smallestVal && totalCustomers == 2) {
 				smallestVal = customersTotals[(int) Math.round(p)];
 						String finalTotall = String.format("%.2f", smallestVal);
 				System.out.println("Smallest: " + customerArray[(int) Math.round(p)] + " (" + finalTotall + ") ");
