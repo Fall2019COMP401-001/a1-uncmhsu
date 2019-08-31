@@ -88,6 +88,7 @@ public class A1Adept {
 		String finalTotall = String.format("%.2f", smallestVal);
 System.out.println("Smallest: " + customerArray[0] + " (" + finalTotall + ") ");
 	} else {
+		//else condition
 		for (Double p = 0.0; p < totalCustomers; p++) {
 			if (customersTotals[(int) Math.round(p)] < smallestVal) {
 				smallestVal = customersTotals[(int) Math.round(p)];
